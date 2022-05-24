@@ -15,6 +15,7 @@
 #include <limits>
 #include <chrono>
 #include <cmath>
+#include <algorithm>
 
 namespace bdap {
 
