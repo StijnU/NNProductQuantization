@@ -1,0 +1,53 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "time and accuracy",
+            "type": "python",
+            "request": "launch",
+            "program": "main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["--task=time_and_accuracy","-k=10","-n=250", "--seed=123456789", "spambase"]
+        },
+        {
+            "name": "absolute error",
+            "type": "python",
+            "request": "launch",
+            "program": "main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["--task=distance_error","-k=10","-n=250", "--seed=123456789", "spambase"]
+        },
+        {
+            "name": "retrieval",
+            "type": "python",
+            "request": "launch",
+            "program": "main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["--task=retrieval","-k=10","-n=250", "--seed=123456789", "spambase"]
+        },
+        {
+            "name": "hyperparameter",
+            "type": "python",
+            "request": "launch",
+            "program": "main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["--task=hyperparam","-k=10","-n=1000", "--seed=123456789", "spambase"]
+        },
+        {
+            "name": "plot",
+            "type": "python",
+            "request": "launch",
+            "program": "main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["--task=plot","-k=10","-n=10", "--seed=123456789", "spambase"]
+        }
+    ]
+}
